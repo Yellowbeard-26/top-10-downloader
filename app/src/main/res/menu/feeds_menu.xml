@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mnufree"
+        android:title="free apps" />
+    <item
+        android:id="@+id/mnupaid"
+        android:title="paid apps" />
+    <item
+        android:id="@+id/mnusongs"
+        android:title="Songs" />
+    <group
+        android:id="@+id/mnugrp"
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        android:visible="true">
+        <item
+            android:id="@+id/mnu25"
+            android:checkable="true"
+            android:checked="false"
+            android:menuCategory="container"
+            android:title="top 25" />
+        <item
+            android:id="@+id/mnu10"
+            android:checkable="true"
+            android:checked="true"
+            android:menuCategory="container"
+            android:title="top 10"
+            android:visible="true" />
+    </group>
+</menu>
